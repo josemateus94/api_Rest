@@ -95,5 +95,31 @@
                 </div>
             </div>
         </div>
+        <script src="{{ asset('js/jquery.js') }}" type='text/javascript'></script>
+        <script>
+            $.ajaxSetup({
+                headers:{
+                    "X-CSRF-TOKEN":"{{ csrf_token() }}"
+                }
+            });
+            $.ajax({
+                method: "PUT",
+                url: "/api/product/"+17,
+                dataType: 'json',
+                data : {
+                    name : "Maria02aaaaaaaaaaaaaaaaaaa",
+                    price :350,
+                    category_id : 2,
+                },
+                success: function(data){
+                    obj = JSON.parse(data);
+                    console.log(obj);
+                    console.log(data);                    
+                },
+                error: function(error){                    
+                    console.log(error.responseJSON.errors.name[0]);
+                }
+            });
+        </script>
     </body>
 </html>
