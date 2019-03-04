@@ -8,6 +8,7 @@ return [
     'update_image'          => 'Error uploading file.',
     
     'name_requered'         => 'Name required.',
+    'name_min'              => 'Amount of character per name less than allowed',
     'name_max'              => 'Larger character quantity by name than allowed.',
     'name_unique'           => 'The name is already registered in the system.',
 

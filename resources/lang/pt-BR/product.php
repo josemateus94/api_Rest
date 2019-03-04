@@ -7,6 +7,7 @@ return [
     'update_image'          => 'Erro ao efetuar o upload do arquivo',
     
     'name_requered'         => 'Nome obrigatório',
+    'name_min'              => 'Quantidade de caractere por nome menor que o permitido',
     'name_max'              => 'Quantidade de caractere por nome maior que o permitido',
     'name_unique'           => 'O nome já se encontra cadastrado no sistema',
 

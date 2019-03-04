@@ -25,7 +25,7 @@ class StoreUpdateProductFormResquest extends FormRequest
     {        
         // dd($this->segment(3));
         return [
-            'name'          => "required|min:3|max:10|unique:products,name,{$this->product},id",
+            'name'          => "required|min:2|max:10|unique:products,name,{$this->product},id",
             'category_id'   => 'required|exists:categories,id',
             'price'         => 'required|numeric',
             'description'   => 'max:1000',
@@ -36,6 +36,7 @@ class StoreUpdateProductFormResquest extends FormRequest
     public function messages(){
         return [
             'name.required'         => __('product.name_requered'),
+            'name.min'              => __('product.name_min'),
             'name.max'              => __('product.name_max'),
             'name.unique'           => __('product.name_unique'),
             'category_id.required'  => __('product.category_id_required'),
