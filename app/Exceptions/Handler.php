@@ -56,6 +56,13 @@ class Handler extends ExceptionHandler
                 return response()->json(['erros' => 'Method_Not_AllowedHttp'], $exception->getStatusCode());   
             }            
         }
+
+        if ($exception instanceof Tymon\JWTAuth\Exceptions\TokenExpiredException) {
+            return response()->json(['token_expired'], $exception->getStatusCode());
+        }
+        if ($exception instanceof Tymon\JWTAuth\Exceptions\TokenInvalidException) {
+            return response()->json(['token_invalid'], $exception->getStatusCode());
+        }
         return parent::render($request, $exception);
     }
 }
