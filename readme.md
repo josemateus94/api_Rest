@@ -6,7 +6,7 @@
 
 4 - Executar os Sedders.
 
-5 - Para testa o projeto e necessario criar uma conta, executando a sedders o mesmo criara um usuario.
+5 - Para testar o projeto e necessario criar uma conta, executando os sedders o mesmo criara um usuario de teste.
 
 email:teste@teste.com.br
 
