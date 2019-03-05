@@ -6,4 +6,4 @@ Route::group(['prefix' => 'v1', 'namespace' => 'Api\V1', 'middleware' => 'jwt.au
     Route::apiResource('/product', 'ProductController');     
 });
 Route::post('auth', 'Auth\AuthApiController@authenticate' );
-Route::get('user', 'Auth\AuthApiController@getAuthenticatedUser' ); // pusca o usuario atraves do token
+Route::get('user', 'Auth\AuthApiController@getAuthenticatedUser' ); // busca o usuario atraves do token
