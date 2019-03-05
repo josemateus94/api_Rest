@@ -10,7 +10,7 @@ itens obrigatorios	-> category_id, name, prince
 
 itens opcional		-> description, image
 
-
+---------------------------------------------------------------------------------------------------------------------------
 
 Logar no sistema
 
