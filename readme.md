@@ -11,7 +11,9 @@ itens obrigatorios	-> category_id, name, prince
 itens opcional		-> description, image
 
 Logar no sistema
+
 Metodo post /api/v1/auth
+
     Ex:
     
     $.ajax({
@@ -31,7 +33,9 @@ Metodo post /api/v1/auth
     });
 
 Lista todos os produtos por paginação.
+
 Metodo = get|	/api/v1/product
+
     Ex:
     
 	$.ajax({
@@ -50,7 +54,9 @@ Metodo = get|	/api/v1/product
     });
 
 Cria itens produtos
+
 Metodo = post|	/api/v1/product
+
     Ex:
     
 	$.ajax({
@@ -76,7 +82,9 @@ Metodo = post|	/api/v1/product
     });
 
 Editar produtos - O orimeiro itens seria o id do produto.
+
 Metodo = put|	/api/v1/product -> exe: /api/product/23?name=Teclado&description=Ola Mundo teste&price=59.99&category_id=1
+    
     Ex:
     
 	$.ajax({
@@ -100,8 +108,10 @@ Metodo = put|	/api/v1/product -> exe: /api/product/23?name=Teclado&description=O
     });
 
 Deleta o item desejado - O orimeiro itens seria o id do produto.
+
 Metodo delete|	/api/v1/product -> exe : /api/product/23 
-    Ex:
+   
+   Ex:
     
  	$.ajax({
         method: "DELETE",
@@ -119,7 +129,9 @@ Metodo delete|	/api/v1/product -> exe : /api/product/23
     });
 
 pesquisa o produto desejado - O orimeiro itens seria o id do produto.
+
 Metodo get|	/api/v1/product -> exe : /api/product/2 
+    
     Ex:
     
 	$.ajax({
