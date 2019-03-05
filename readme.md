@@ -4,7 +4,13 @@
 
 3 - Executar Migratios.
 
-4 - Executar os Sedders
+4 - Executar os Sedders.
+
+5 - Para testa o projeto e necessario criar uma conta, executando a sedders o mesmo criara um usuario.
+
+email:teste@teste.com.br
+
+senha:123456
 
 itens obrigatorios	-> category_id, name, prince
 
