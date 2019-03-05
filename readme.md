@@ -1,3 +1,107 @@
+Rodas as Migratios
+Rodas os Sedders
+
+itens obrigatorios	->category_id, name, prince
+itens opcional		->description, image
+
+get|	/api/v1/product -> lista todos os produtos por paginação
+	$.ajax({
+        method: "GET",
+        url: "/api/v1/product/",
+        dataType: 'json',
+        success: function(data){
+            console.log(data);                    
+        },
+        error: function(error){                    
+            console.log(error.responseJSON.errors.name[0]);
+        }
+    });
+
+post|	/api/v1/product -> cria produtos.
+	$.ajax({
+        method: "POST",
+        url: "/api/v1/product/",
+        dataType: 'json',
+        data : {
+            name : "HD",
+            price :350,
+            category_id : 2,
+        },
+        success: function(data){
+            obj = JSON.parse(data);
+            console.log(obj);
+            console.log(data);                    
+        },
+        error: function(error){                    
+            console.log(error.responseJSON.errors.name[0]);
+        }
+    });
+
+put|	/api/v1/product -> iditar produtos exe: /api/product/23?name=Teclado&description=Ola Mundo teste&price=59.99&category_id=1
+
+	$.ajax({
+        method: "PUT",
+        url: "/api/v1/product/"+17,
+        dataType: 'json',
+        data : {
+            name : "Maria02",
+            price :350,
+            category_id : 2,
+        },
+        success: function(data){
+            console.log(data);                    
+        },
+        error: function(error){                    
+            console.log(error.responseJSON.errors.name[0]);
+        }
+    });
+
+delete|	/api/v1/product -> deleta o item desejado. exe : /api/product/23 	
+ 	$.ajax({
+        method: "DELETE",
+        url: "/api/v1/product/"+3,
+        dataType: 'json',
+        success: function(data){
+            console.log(data);                    
+        },
+        error: function(error){                    
+            console.log(error.responseJSON.errors.name[0]);
+        }
+    });
+
+get|	/api/v1/product -> pesquisa o produto desejado. exe : /api/product/2 
+	$.ajax({
+        method: "GET",
+        url: "/api/v1/product/"+4,
+        dataType: 'json',
+        success: function(data){
+            console.log(data);                    
+        },
+        error: function(error){                    
+            console.log(error.responseJSON.errors.name[0]);
+        }
+    });	
+
+POST /api/v1/auth -> logar no sistema
+    $.ajax({
+        method: "POST",
+        url: "/api/v1/auth",
+        dataType: 'json',
+        data : {
+            email : "",
+            password :'',            
+        },
+        success: function(data){
+            console.log(data);                    
+        },
+        error: function(error){                    
+            console.log(error.responseJSON.errors.name[0]);
+        }
+    });
+
+
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
