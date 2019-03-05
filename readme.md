@@ -42,7 +42,7 @@ Metodo = get|	/api/v1/product
     
 	$.ajax({
         method: "GET",
-        url: "/api/v1/product/",
+        url: "/api/v1/product?page="+page,
         dataType: 'json',
         beforeSend: function (xhr) {
             xhr.setRequestHeader ("Authorization", "Bearer " + token);
