@@ -1,9 +1,13 @@
 1 - Executar composer update.
+
 2 - Configura o arquivo .env.
+
 3 - Executar Migratios.
+
 4 - Executar os Sedders
 
 itens obrigatorios	-> category_id, name, prince
+
 itens opcional		-> description, image
 
 Logar no sistema
