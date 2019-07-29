@@ -89,7 +89,7 @@ Metodo = post|	/api/v1/product
         }
     });
 
-Editar produtos - O orimeiro itens seria o id do produto.
+Editar produtos - O primeiro itens seria o id do produto.
 
 Metodo = put|	/api/v1/product -> exe: /api/product/23?name=Teclado&description=Ola Mundo teste&price=59.99&category_id=1
     
@@ -115,7 +115,7 @@ Metodo = put|	/api/v1/product -> exe: /api/product/23?name=Teclado&description=O
         }
     });
 
-Deleta o item desejado - O orimeiro itens seria o id do produto.
+Deleta o item desejado - O primeiro itens seria o id do produto.
 
 Metodo delete|	/api/v1/product -> exe : /api/product/23 
    
@@ -136,7 +136,7 @@ Metodo delete|	/api/v1/product -> exe : /api/product/23
         }
     });
 
-pesquisa o produto desejado - O orimeiro itens seria o id do produto.
+pesquisa o produto desejado - O primeiro itens seria o id do produto.
 
 Metodo get|	/api/v1/product -> exe : /api/product/2 
     
